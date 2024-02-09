@@ -1,4 +1,4 @@
-from functools import lru_cache
+code = """from functools import lru_cache
 from time import perf_counter
 
 
@@ -27,3 +27,6 @@ try:
 except ValueError as ve:
 
     print('fibonacci series for negative numbers does not exist')
+"""
+
+exec(code)
