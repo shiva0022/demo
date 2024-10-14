@@ -665,8 +665,16 @@ footer > .container {
   .layout > .cards {
     grid-template-columns: 1fr 1fr;
   }
+  .layout-card > a > img {
+    height: 210px;
+    width: 100%;
+  }
+  .layout-card > h4 {
+    font-size: 1em;
+    margin: 0px 2px;
+  }
   .overlay {
-    height: 75%;
+    height: 70%;
   }
   .add {
     font-size: 0.8em;
@@ -727,5 +735,12 @@ footer > .container {
   .mini-card > a > img {
     width: 10vw;
     height: 16vh;
+  }
+}
+
+@media (max-width: 500px) and (max-height: 700px) {
+  .mini-card > a > img {
+    width: 15vw;
+    height: 13vh;
   }
 }
